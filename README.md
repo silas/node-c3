@@ -8,15 +8,35 @@ Install c3
 
     npm install c3
 
-Usage
+Create file `demo.js`
 
-    var assert = require('assert')
-      , c3 = require('c3')
+    var c3 = require('c3')
 
-    var c = c3('a')
-    c.add('a', 'b')
-    c.add('b', 'c')
-    assert.deepEqual(c.run(), ['a', 'b', 'c'])
+    console.log(
+      c3('Z')
+        .add('Z', 'K1')
+        .add('Z', 'K2')
+        .add('Z', 'K3')
+        .add('K3', 'D')
+        .add('K3', 'A')
+        .add('K2', 'D')
+        .add('K2', 'B')
+        .add('K2', 'E')
+        .add('K1', 'A')
+        .add('K1', 'B')
+        .add('K1', 'C')
+        .add('E', 'O')
+        .add('D', 'O')
+        .add('C', 'O')
+        .add('B', 'O')
+        .add('A', 'O')
+        .run()
+    )
+
+Run `demo.js`
+
+    [silas@host ~]$ node demo.js
+    [ 'Z', 'K1', 'K2', 'K3', 'D', 'A', 'B', 'C', 'E', 'O' ]
 
 ## License
 
