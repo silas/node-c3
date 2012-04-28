@@ -1,0 +1,21 @@
+{
+  "name": "c3",
+  "description": "C3 linearization algorithm",
+  "version": "0.0.1",
+  "author": "Silas Sewell <silas@sewell.org>",
+  "dependencies": {},
+  "devDependencies": {
+    "jshint": ">= 0.6.1",
+    "nodeunit": ">= 0.7.4"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/silas/node-c3.git"
+  },
+  "bugs": { "url": "http://github.com/silas/node-c3/issues" },
+  "keywords": ["c3", "linearization", "mro"],
+  "scripts": {
+    "test": "nodeunit test && jshint ."
+  },
+  "main": "./lib"
+}
