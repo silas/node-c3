@@ -16,6 +16,5 @@
   "keywords": ["c3", "linearization", "mro"],
   "scripts": {
     "test": "nodeunit test && jshint ."
-  },
-  "main": "./lib"
+  }
 }

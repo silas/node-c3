@@ -1,4 +1,4 @@
-var c3 = require('../lib')
+var c3 = require('..')
 
 exports.basic = function(test) {
   var c = c3('a')
